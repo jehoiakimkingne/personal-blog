@@ -151,6 +151,18 @@ nav.site-nav a {
   transition: background 0.15s ease, color 0.15s ease;
 }
 nav.site-nav a:hover { color: var(--sage-deep); background: var(--sage-tint); }
+
+/* Language switch */
+.lang-switch {
+  margin-left: 0.3rem;
+  padding-left: 0.9rem !important;
+  border-left: 1px solid var(--line);
+  color: var(--sage-dark) !important;
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 0.02em;
+}
+.lang-switch:hover { background: var(--sage-tint); }
 nav.site-nav a.active { color: var(--cream); background: var(--sage-dark); }
 
 /* Hero */
@@ -301,6 +313,48 @@ section + section { border-top: 1px solid var(--line); }
 .post-entry h3 a { text-decoration: none; color: var(--ink); }
 .post-entry h3 a:hover { color: var(--sage-dark); }
 .post-entry p { color: var(--muted); margin-bottom: 0; }
+
+/* Media (YouTube / LinkedIn) */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.8rem;
+}
+.media-item {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.3rem 1.5rem;
+  text-decoration: none !important;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.media-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--sage);
+}
+.media-icon {
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--sage-tint), var(--beige));
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sage-dark);
+  flex-shrink: 0;
+}
+.media-icon svg { width: 1.4rem; height: 1.4rem; fill: currentColor; }
+.media-text { display: flex; flex-direction: column; }
+.media-text .media-name { font-weight: 600; color: var(--ink); }
+.media-text .media-sub { font-size: 0.88rem; color: var(--muted); margin-top: 0.1rem; }
+.media-item:hover .media-name { color: var(--sage-dark); }
 
 /* Post page */
 .post-header { padding: 3.5rem 0 1.5rem; }
