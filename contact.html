@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Jehoiakim Kingné</title>
+<meta name="description" content="Get in touch with Jehoiakim Kingné.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="wordmark">Jehoiakim Kingné</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Get in touch</h1>
+      <p class="lede">Whether it's about a consulting project, the blog, or something else entirely — feel free to reach out.</p>
+    </div>
+  </section>
+
+  <section style="border-top: none; padding-top: 0;">
+    <div class="wrap contact-block">
+
+      <ul class="contact-list">
+        <li><span class="label">Email</span> <a href="mailto:hello@jehoiakimkingne.com">hello@jehoiakimkingne.com</a></li>
+        <li><span class="label">GitHub</span> <a href="https://github.com/jehoiakimkingne" target="_blank" rel="noopener">github.com/jehoiakimkingne</a></li>
+      </ul>
+
+      <!--
+        NOTE for setup:
+        1. Replace hello@jehoiakimkingne.com with a real address once your domain is live
+           (most domain hosts let you set up free email forwarding to your personal inbox).
+        2. Add your LinkedIn link above if you'd like it listed too.
+        3. The form below is a placeholder. To make it actually send you messages without
+           building a backend, sign up free at https://formspree.io, get your form endpoint,
+           and replace the action="" value below with it.
+      -->
+
+      <form class="contact-form" action="" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send message</button>
+      </form>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Jehoiakim Kingné. Built in London.</p>
+  </div>
+</footer>
+
+</body>
+</html>
